@@ -1,0 +1,47 @@
+.form {
+    &__control {
+        .amount {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            label {
+                margin: 1rem 0;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-start;
+
+                li {
+                    margin-bottom: 1rem;
+
+                    &:first-child {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+
+        label {
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        input[type='text'],
+        input[type='number'] {
+            border: 1px solid #dedede;
+            border-radius: 2px;
+            display: block;
+            font-size: 1.6rem;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        input[type='text']:focus,
+        input[type='number']:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+scalar DateTime
+
+type Transaction {
+    id: ID!
+    text: String!
+    amount: Int!
+    createdAt: DateTime!
+}
+
+type DeletedPayload {
+    id: ID!
+}
+
+type Query {
+    transactions: [Transaction]!
+}
+
+type Mutation {
+    createTransaction(text: String!, amount: Int!): Transaction!
+    deleteTransaction(id: ID!): DeletedPayload!
+}

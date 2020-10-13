@@ -1,0 +1,57 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 1rem = 10px; 10px/16px = equals to be 62.5% of the default browser font size */
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box; /* padding and border are calculated already */
+    background-color: #f7f7f7;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 1rem;
+    margin: 4rem 0 1rem;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #9c88ff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn:focus {
+    outline: 0;
+}
